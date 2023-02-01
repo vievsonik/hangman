@@ -1,5 +1,5 @@
 const playbutton = document.getElementById ('playbutton');
-const firstDiv = document.getElementById('first-div');
+const firstDivs = document.getElementById('first-div');
 const mains = document.getElementsByClassName('main')[0];
 let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -7,9 +7,12 @@ let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 function generateButtons (letter){
     const btn = document.createElement("button");
-    btn.id = letter;
     btn.innerText = letter;
-    firstDiv.appendchild(btn);
+    btn.id = letter;
+    btn.addEventListener ('click', () => {
+        btn.disabled =true
+    })
+    firstDivs.appendChild(btn);
 }
 function displayButtons () {
     alphabet.split('').forEach((letter) => {
@@ -22,6 +25,7 @@ function displayButtons () {
 
 function play () {
     mains.style.display = 'flex';
+    playbutton.style.display = 'none';
     generateButtons();
     displayButtons();
 }
@@ -31,3 +35,4 @@ function play () {
 
 
 playbutton.addEventListener ('click',play)
+

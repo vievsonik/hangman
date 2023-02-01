@@ -10,3 +10,13 @@
 .main{
     display: none;
 }
+#first-div{
+    max-width: 440px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 19px;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+}
