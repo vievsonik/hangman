@@ -1,14 +1,14 @@
 const playbutton = document.getElementById ('playbutton');
 const firstDivs = document.getElementById('first-div');
 const mains = document.getElementsByClassName('main')[0];
-let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" ;
 
 
 
-function generateButtons (letter){
+function generateButtons (letter) {
     const btn = document.createElement("button");
     btn.innerText = letter;
-    btn.id = letter;
     btn.addEventListener ('click', () => {
         btn.disabled =true
     })
@@ -16,10 +16,8 @@ function generateButtons (letter){
 }
 function displayButtons () {
     alphabet.split('').forEach((letter) => {
-        generateButtons (letter)
+        generateButtons(letter)
     })
-
-
 }
 
 
@@ -34,5 +32,5 @@ function play () {
 
 
 
-playbutton.addEventListener ('click',play)
+playbutton.addEventListener ('click',play);
 
