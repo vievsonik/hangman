@@ -1,7 +1,6 @@
 const playbutton = document.getElementById ('playbutton');
 const firstDivs = document.getElementById('first-div');
 const mains = document.getElementsByClassName('main')[0];
-
 let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" ;
 
 
