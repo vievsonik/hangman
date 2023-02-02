@@ -13,9 +13,21 @@
     align-items: center;
     gap: 33px;
 }
+#btnstyle{
+    background-color: blue;
+}
 #reload{
     width: 90px;
     font-size: 1rem;
+    transition: 0.7s ;
+    border: none;
+    background-color:aquamarine;
+    border-radius: 14px;
+}
+#reload:hover{
+    width: 100px;
+    height: 30px;
+    background-color: bisque;
 }
 #first-div{
     max-width: 440px;

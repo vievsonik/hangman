@@ -14,6 +14,7 @@ let hiddenWord = '';
 function generateButtons (letter) {
     const btn = document.createElement("button");
     btn.innerText = letter;
+    btn.Id = 'btnstyle';
     btn.addEventListener ('click', () => {
         btn.disabled =true
         btn.style.backgroundColor = 'red';
@@ -39,8 +40,7 @@ function showRandomWord () {
 function play () {
     mains.style.display = 'flex';
     playbutton.style.display = 'none';
-    reload. 
-    generateButtons();
+    // reload. 
     displayButtons();
     showRandomWord();
     
@@ -51,4 +51,8 @@ function play () {
 
 
 playbutton.addEventListener ('click',play);
+
+reload.addEventListener('click', () =>{
+    window.location.reload();
+})
 
