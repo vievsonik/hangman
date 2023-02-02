@@ -2,6 +2,7 @@ const playbutton = document.getElementById ('playbutton');
 const firstDivs = document.getElementById('first-div');
 const mains = document.getElementsByClassName('main')[0];
 const RandomName = document.getElementById('Random-name');
+const reload = document.getElementById('reload');
 const randomArr = ['white', 'nike', 'kvara', 'Popcorn'];
 let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" ;
 let gueessTheWord = '';
@@ -37,7 +38,8 @@ function showRandomWord () {
 
 function play () {
     mains.style.display = 'flex';
-    playbutton.style.display = 'none'; 
+    playbutton.style.display = 'none';
+    reload. 
     generateButtons();
     displayButtons();
     showRandomWord();

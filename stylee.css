@@ -9,6 +9,13 @@
 }
 .main{
     display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 33px;
+}
+#reload{
+    width: 90px;
+    font-size: 1rem;
 }
 #first-div{
     max-width: 440px;
